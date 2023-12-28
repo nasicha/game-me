@@ -29,16 +29,22 @@ onMounted(() => {
 <style lang="scss">
 .sk {
   &-instagram-user-root-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
+    @media (min-width: 451px) {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
   }
+
   
   &-ig-profile-info {
-    max-width: 460px;
     color: black;
+    
+    @media (min-width: 480px) {
+      max-width: 460px;
+    }
   }
 }
 
