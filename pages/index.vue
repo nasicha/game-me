@@ -1,20 +1,20 @@
 <template>
-  <header>
-    <Profile></Profile>
-  </header>
-  <InstagramGallery></InstagramGallery>
+  <div class='sk-ww-instagram-feed-private' :data-embed-id='247728'></div>
 </template>
 
 <script lang="ts" setup>
 useHead({
   title: "game-me",
 });
+
 </script>
+
+
 
 <style lang="scss">
 
 :root {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 *,
@@ -23,46 +23,6 @@ useHead({
   box-sizing: border-box;
   margin-block: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-  min-height: 100vh;
-  background-color: #fafafa;
-  color: #262626;
-  padding-bottom: 3rem;
-}
-
-img {
-  display: block;
-}
-
-.container {
-  max-width: 93.5rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.btn {
-  display: inline-block;
-  font: inherit;
-  background: none;
-  border: none;
-  color: inherit;
-  padding: 0;
-  cursor: pointer;
-}
-
-.btn:focus {
-  outline: 0.5rem auto #4d90fe;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
 }
 
 </style>

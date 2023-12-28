@@ -2,13 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@/assets/scss/main.scss'],
-  modules: [
-    '@vueuse/nuxt',
-    '@nuxt/image',
-  ],
-  image: {
-    storyblok: {
-      baseURL: 'https://a.storyblok.com'
-    }
+  app: {
+    head: {
+      script: [{ src: 'https://widgets.sociablekit.com/instagram-feed-private/widget.js', async: true, defer: true }],
+    },
   },
+  modules: [
+    '@vueuse/nuxt'
+  ],
 })
