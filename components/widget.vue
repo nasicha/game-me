@@ -49,6 +49,6 @@ onMounted(() => {
 }
 
 .loading-img {
-  margin: 42vh;
+  margin: 42vh 0;
 }
 </style>
