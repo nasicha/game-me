@@ -18,7 +18,7 @@ onMounted(() => {
       const myDiv = document.querySelector('.sk-instagram-feed-private-bio-container');
 
       if (myDiv) {
-        myDiv.textContent = 'Iris Böhm • Meine Bewerbung als Social Media Manager in Form einer Instagram-Schnitzeljagd. Keinen Bock auf das Spiel?'; // Replace with your desired text
+        myDiv.textContent = 'Iris Böhm • Meine Bewerbung als Social Media Manager in Form einer Instagram-Schnitzeljagd.'; // Replace with your desired text
 
         clearInterval(intervalIdProvileText);
       }
