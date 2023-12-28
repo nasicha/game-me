@@ -1,10 +1,13 @@
 <template>
-  <div class='sk-ww-instagram-feed-private' :data-embed-id='247728'></div>
+  <div class="container">
+    <Widget></Widget>
+  </div>
 </template>
 
 <script lang="ts" setup>
 useHead({
-  title: "game-me",
+  title: "Game Me · Enigma Eleganza Extravaganza",
+  meta: [{ name: "description", content: "I'm different" }],
 });
 
 </script>
@@ -24,5 +27,8 @@ useHead({
   margin-block: 0;
   padding: 0;
 }
-
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
 </style>
