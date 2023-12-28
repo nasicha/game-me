@@ -6,15 +6,15 @@
 
 <script lang="ts" setup>
 useHead({
-  title: "Game Me · Enigma Eleganza Extravaganza",
-  meta: [{ name: "description", content: "I'm different" }],
+  title: 'Game Me · Enigma Eleganza Extravaganza',
+  meta: [{ name: 'description', content: 'I\'m different' }],
 });
 useSeoMeta({
-  title: "Game Me · Enigma Eleganza Extravaganza",
-  ogTitle: "Game Me · Enigma Eleganza Extravaganza",
-  ogImage: "https://images.sociablekit.com/images/game_me_2024.jpg",
-  ogUrl: "https://game-me-2024.netlify.app/",
-  ogDescription: "I'm different" ,
+  title: 'Game Me · Enigma Eleganza Extravaganza',
+  ogTitle: 'Game Me · Enigma Eleganza Extravaganza',
+  ogImage: 'https://images.sociablekit.com/images/game_me_2024.jpg',
+  description: 'I\'m different',
+  ogDescription: 'I\'m different',
 });
 </script>
 
