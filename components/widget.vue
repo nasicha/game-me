@@ -3,7 +3,7 @@
   <div ref="passwordContainer" class="password-container">
     <p ref="instructions" v-if="feedLoaded">Um das Codewort einzugeben, entweder dem Kanal folgen oder gleich hier ausprobieren:</p>
     <div v-if="feedLoaded" class="input-container">
-      <input v-model="enteredPassword" placeholder="Codewort eingeben" ref="myInput" />
+      <input v-model="enteredPassword" @keydown.enter="checkPassword" placeholder="Codewort eingeben" ref="myInput" />
       <button @click="checkPassword">></button>
     </div>
     <small v-if="wrongPassword" class="hint">{{'Leider falsch. Codewort in Großbuchstaben und ohne Leerzeichen schreiben, dann gibts Kuchen 🍰'}}</small>
@@ -46,6 +46,8 @@ onMounted(() => {
       }
     }, 50);
 })
+
+
 
 const checkPassword = () => {
   // Compare entered password with pwd

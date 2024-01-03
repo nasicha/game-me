@@ -6,7 +6,7 @@
             <h3>Codewort ist korrekt!</h3>
           </div>  
           <div class="modal-body">
-            <p>Okay. The test is over now. You win. Click OK to watch the video. For your cake.</p>
+            <p>Ja, gut. Der Test ist jetzt vorbei. Du hast gewonnen. Geh und klick auf den Knopf. Für deinen Kuchen.</p>
           </div>
           <div class="modal-footer">
             <button class="modal-button" @click="handleButtonClick">
@@ -27,7 +27,6 @@ const handleButtonClick = () => {
 }
 
 const closeModal = (event: MouseEvent) => {
-  console.log((event.target as HTMLElement).classList.contains('modal-wrapper'));
   if ((event.target as HTMLElement).classList.contains('modal-wrapper')) {
     emit('close');
   }
@@ -45,7 +44,7 @@ const closeModal = (event: MouseEvent) => {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: table;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   &-wrapper {
@@ -54,7 +53,7 @@ const closeModal = (event: MouseEvent) => {
   }
 
   &-container {
-    max-width: 280px;
+    width: 320px;
     margin: 0px auto;
     padding: 1.25rem 1.75rem;
     background-color: #fff;
@@ -70,7 +69,6 @@ const closeModal = (event: MouseEvent) => {
 
   &-body {
     margin-bottom: 1.25rem;
-    text-wrap: pretty;
     line-height: 1.25rem;;
   }
 
