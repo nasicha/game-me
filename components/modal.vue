@@ -6,7 +6,7 @@
             <h3>Codewort ist korrekt!</h3>
           </div>  
           <div class="modal-body">
-            <p>Ja, gut. Der Test ist jetzt vorbei. Du hast gewonnen. Geh und klick auf den Knopf. Für deinen Kuchen.</p>
+            <p>Ja, gut. Der Test ist jetzt vorbei. Du hast gewonnen. Geh und klick auf Kuchen. Für deinen Kuchen.</p>
           </div>
           <div class="modal-footer">
             <button class="modal-button" @click="handleButtonClick">
