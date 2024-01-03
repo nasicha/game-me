@@ -6,7 +6,7 @@
             <h3>Codewort ist korrekt!</h3>
           </div>  
           <div class="modal-body">
-            <p>Ja, gut. Der Test ist jetzt vorbei. Du hast gewonnen. Geh und klick auf Kuchen. Für deinen Kuchen.</p>
+            <p>Ja, gut. Der Test ist jetzt vorbei. Du hast gewonnen. Geh und klick auf den Kuchen. Für deinen Kuchen.</p>
           </div>
           <div class="modal-footer">
             <button class="modal-button" @click="handleButtonClick">
@@ -53,7 +53,8 @@ const closeModal = (event: MouseEvent) => {
   }
 
   &-container {
-    width: 320px;
+    width: 360px;
+    max-width: 90vw;
     margin: 0px auto;
     padding: 1.25rem 1.75rem;
     background-color: #fff;
@@ -69,7 +70,8 @@ const closeModal = (event: MouseEvent) => {
 
   &-body {
     margin-bottom: 1.25rem;
-    line-height: 1.25rem;;
+    line-height: 1.25rem;
+    text-wrap: pretty;
   }
 
   &-footer {
